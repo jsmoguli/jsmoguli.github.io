@@ -1,0 +1,103 @@
+.contact-big {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	padding: 11rem 0;
+	background: url(../assets/img/image14.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.contact-big-info {
+	position: absolute;
+	top: 85%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 2.4rem;
+	background-color: var(--unnamed-color-ffffff);
+	width: calc(100% - 4rem);
+	padding: 4rem 2rem;
+	box-shadow: 0 0 4rem rgba(0, 0, 0, 0.2);
+}
+
+.contact-big-info button {
+	background-color: var(--unnamed-color-ebebeb);
+	border-color: var(--unnamed-color-ebebeb);
+}
+
+.contact-big-txt {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 0.8rem;
+	text-align: center;
+}
+
+.contact-big-txt h1{
+	font: 
+		var(--unnamed-font-style-normal) normal 
+		var(--unnamed-font-weight-bold) 
+		var(--unnamed-font-size-24)/var(--unnamed-line-spacing-32) 
+		var(--unnamed-font-family-open-sans);
+}
+
+.contact-big-txt h2{
+	font: 
+		var(--unnamed-font-style-normal) normal 
+		var(--unnamed-font-weight-normal) 
+		var(--unnamed-font-size-16)/var(--unnamed-line-spacing-24) 
+		var(--unnamed-font-family-open-sans);
+}
+
+@media only screen and (min-width: 1150px) {
+
+	.section-four {
+		padding-left: 14%;
+	}
+
+	.contact-big {
+		width: 50%;
+		padding: 27rem 0;
+	}
+
+	.contact-big-info {
+	    position: absolute;
+	    top: 50%;
+	    left: 50%;
+	    transform: translate(30%, -50%);
+	    height: 75%;
+	    width: 78%;
+	    align-items: flex-start;
+	    text-align: left;
+	}
+
+	.contact-big-txt {
+		align-items: flex-start;
+	}
+}
+
+@media only screen and (min-width:  1650px) {
+
+	.contact-big-info {
+	    padding: 4rem;
+	    width: 82%;
+	}
+
+	.contact-big-txt h1 {
+		font: 
+			var(--unnamed-font-style-normal) normal 
+			var(--unnamed-font-weight-bold) 36px/var(--unnamed-line-spacing-48) 
+			var(--unnamed-font-family-open-sans);
+	}
+
+	.contact-big-txt h2 {
+		font: 
+			var(--unnamed-font-style-normal) normal 
+			var(--unnamed-font-weight-normal) 
+			var(--unnamed-font-size-18)/40px 
+			var(--unnamed-font-family-open-sans);
+	}
+}

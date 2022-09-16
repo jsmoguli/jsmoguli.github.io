@@ -1,0 +1,101 @@
+.showcase {
+	margin-bottom: 4.3rem;
+	padding-top: 12rem;
+}
+
+.showcase-txt {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1.6rem;
+	text-align: center;
+}
+
+.showcase-txt h1 {
+	font: 
+		var(--unnamed-font-style-normal) normal 
+		var(--unnamed-font-weight-bold) 36px/var(--unnamed-line-spacing-48) 
+		var(--unnamed-font-family-open-sans);
+}
+
+.showcase-txt h2 {
+	font: 
+		var(--unnamed-font-style-normal) normal 
+		var(--unnamed-font-weight-bold) 
+		var(--unnamed-font-size-16)/var(--unnamed-line-spacing-24) 
+		var(--unnamed-font-family-open-sans);
+}
+
+.showcase-main-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 2.4rem;
+}
+
+.showcase-img {
+		margin-top: 4rem;
+}
+
+.showcase-img img{
+		width: 100%;
+		transform: scaleX(-1);
+}
+
+@media only screen and (min-width:  950px) {
+
+	.showcase {
+		padding-top: 0;
+	}
+
+	.showcase-img {
+		display: none;
+	}
+
+	.showcase-info {
+		position: relative;
+		background: url(../assets/img/sarah-dorweiler2.jpg);
+		transform: scaleX(-1);
+		background-size: contain;
+		background-position: center;
+		background-repeat: no-repeat;
+		aspect-ratio:  1.2 / 0.7;
+		padding: 20rem 0;
+		display: flex;
+		align-items: center;
+	}
+
+	.showcase-main-info {
+		align-items: flex-start;
+	}
+
+	.showcase-txt {
+		position: absolute;
+		width: 30%;
+		right: clamp(16%, 17.5%, 18%);
+		align-items: flex-start;
+		text-align: left;
+		transform: scaleX(-1);
+	}
+}
+
+@media only screen and (min-width: 1650px) {
+
+	.showcase-txt h1 {
+		font: 
+			var(--unnamed-font-style-normal) normal 
+			var(--unnamed-font-weight-bold) 
+			var(--unnamed-font-size-64)/var(--unnamed-line-spacing-72) 
+			var(--unnamed-font-family-open-sans);
+	}
+
+	.showcase-txt h2 {
+		font: 
+			var(--unnamed-font-style-normal) normal 
+			var(--unnamed-font-weight-bold) 
+			var(--unnamed-font-size-24)/var(--unnamed-line-spacing-36) 
+			var(--unnamed-font-family-open-sans);
+	}
+}
